@@ -8,17 +8,18 @@ namespace SortingAlgorithms
 {
     internal class BubbleSort
     {
-        int n;
-        int[] array;
+        private int n;
+        private int[] array;
+        public int[] solution;
 
         public BubbleSort(int[] array)
         {
             n = array.Length;
             this.array = array;
-            Sorted();
+            solution = Sorted();
         }
 
-        public Array Sorted()
+        private int[] Sorted()
         {
             int temp;
 
@@ -36,12 +37,6 @@ namespace SortingAlgorithms
             }
 
             return array;
-        }
-
-        public void PrintSortedArray()
-        {
-            foreach (var item in array)
-                Console.Write("{0} ", item);
         }
     }
 }

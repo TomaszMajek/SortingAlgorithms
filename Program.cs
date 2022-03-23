@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SortingAlgorithms.Extensions;
+using System;
 
 namespace SortingAlgorithms
 {
@@ -10,9 +11,12 @@ namespace SortingAlgorithms
 
             // sortowanie bąbelkowe
             var bubbleSort = new BubbleSort(generateNumbers.generatedArray);
-            bubbleSort.PrintSortedArray();
+            new PrintSolution(bubbleSort.solution);
 
-                        
+            // Quick Sort
+            var quickSort = new QuickSort(generateNumbers.generatedArray);
+            new PrintSolution(quickSort.solution);
+
 
 
             Console.ReadKey();

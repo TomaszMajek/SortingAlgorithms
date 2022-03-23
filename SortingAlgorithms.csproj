@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\PrintSolution.cs" />
     <Compile Include="SortingAlgorithms\BubbleSort.cs" />
     <Compile Include="GenerateNumbers.cs" />
     <Compile Include="SortingAlgorithms\BucketSort.cs" />
