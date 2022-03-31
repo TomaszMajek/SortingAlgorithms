@@ -43,9 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\CalculateMedianAverage.cs" />
     <Compile Include="Extensions\PrintSolution.cs" />
     <Compile Include="SortingAlgorithms\BubbleSort.cs" />
-    <Compile Include="GenerateNumbers.cs" />
+    <Compile Include="Extensions\GenerateNumbers.cs" />
     <Compile Include="SortingAlgorithms\BucketSort.cs" />
     <Compile Include="SortingAlgorithms\CombSort.cs" />
     <Compile Include="SortingAlgorithms\CountingSort.cs" />

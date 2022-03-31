@@ -8,10 +8,12 @@ namespace SortingAlgorithms
         static void Main(string[] args)
         {
             var generateNumbers = new GenerateNumbers();
+            var calculatedMedian = new CalculateMedianAverage(generateNumbers.generatedArray);
 
-            // sortowanie bąbelkowe
-            var bubbleSort = new BubbleSort(generateNumbers.generatedArray);
-            new PrintSolution(bubbleSort.solution);
+
+            // Bubble Sort
+            //var bubbleSort = new BubbleSort(generateNumbers.generatedArray);
+            //new PrintSolution(bubbleSort.solution);
 
             // Quick Sort
             var quickSort = new QuickSort(generateNumbers.generatedArray);
