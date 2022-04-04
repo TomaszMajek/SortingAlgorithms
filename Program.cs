@@ -1,4 +1,5 @@
 ﻿using SortingAlgorithms.Extensions;
+using SortingAlgorithms.SortingAlgorithms;
 using System;
 
 namespace SortingAlgorithms
@@ -8,17 +9,12 @@ namespace SortingAlgorithms
         static void Main(string[] args)
         {
             var generateNumbers = new GenerateNumbers();
-            var calculatedMedian = new CalculateMedianAverage(generateNumbers.generatedArray);
+            //var calculatedMedian = new CalculateMedianAverage(generateNumbers.generatedArray);
 
 
-            // Bubble Sort
-            //var bubbleSort = new BubbleSort(generateNumbers.generatedArray);
-            //new PrintSolution(bubbleSort.solution);
-
-            // Quick Sort
-            var quickSort = new QuickSort(generateNumbers.generatedArray);
-            new PrintSolution(quickSort.solution);
-
+            // Comb Sort
+            var combSort = new CombSort(generateNumbers.generatedArray);
+            new PrintSolution(combSort.solution);
 
 
             Console.ReadKey();
