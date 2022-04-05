@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\CalculateMedianAverage.cs" />
+    <Compile Include="Extensions\GenerateNumbersWithRepetitions.cs" />
     <Compile Include="Extensions\PrintSolution.cs" />
     <Compile Include="SortingAlgorithms\BubbleSort.cs" />
     <Compile Include="Extensions\GenerateNumbers.cs" />

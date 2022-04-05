@@ -30,7 +30,7 @@ namespace SortingAlgorithms.SortingAlgorithms
                 gap = (gap * 10) / 13;
                 swap = false;
 
-                for(int i = 0; i < array.Length - gap; i++)
+                for (int i = 0; i < array.Length - gap; i++)
                 {
                     if (array[i] > array[i + gap])
                     {

@@ -9,8 +9,6 @@ namespace SortingAlgorithms
         static void Main(string[] args)
         {
             var generateNumbers = new GenerateNumbers();
-            //var calculatedMedian = new CalculateMedianAverage(generateNumbers.generatedArray);
-
 
             // Comb Sort
             var combSort = new CombSort(generateNumbers.generatedArray);
