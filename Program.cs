@@ -9,10 +9,15 @@ namespace SortingAlgorithms
         static void Main(string[] args)
         {
             var generateNumbers = new GenerateNumbers();
+            var generateNumbersWithRepetitions = new GenerateNumbersWithRepetitions();
 
-            // Comb Sort
-            var combSort = new CombSort(generateNumbers.generatedArray);
-            new PrintSolution(combSort.solution);
+            // * Counting Sort *
+            // for Counting sort we use collection of numbers with repetitions
+            // we need repetitions to see proper algorithm characterictic
+            //var countingSort = new CountingSort(generateNumbersWithRepetitions.array);
+            //new PrintSolution(countingSort.solution);
+
+
 
 
             Console.ReadKey();

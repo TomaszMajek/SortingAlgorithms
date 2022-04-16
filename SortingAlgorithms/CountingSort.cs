@@ -22,15 +22,22 @@ namespace SortingAlgorithms.SortingAlgorithms
         private int[] Sorted()
         {
             int max = array.Max();
-            int[] result = new int[max + 1];
+            int[] temp = new int[max + 1];
+            solution = new int[n];
 
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < n; i++)
+                temp[array[i]]++;
+
+            for (int j = 1; j <= max; j++)
+                temp[j] += temp[j - 1];
+
+            for (int k = n - 1; k >= 0; k--)
             {
-                if (array[i] == i)
-                    result[i] += 1;
+                solution[temp[array[k]] - 1] = array[k];
+                temp[array[k]]--;
             }
 
-            return array;
+            return solution;
         }
     }
 }

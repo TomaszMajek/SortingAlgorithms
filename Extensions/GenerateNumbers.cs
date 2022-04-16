@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace SortingAlgorithms
 {
+    // generate without repetitions
     internal class GenerateNumbers
     {
         public int[] generatedArray = Enumerable.Range(0, 100).ToArray();
