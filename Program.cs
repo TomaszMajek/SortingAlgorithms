@@ -12,12 +12,15 @@ namespace SortingAlgorithms
             var generateNumbersWithRepetitions = new GenerateNumbersWithRepetitions();
 
             // * Counting Sort *
-            // for Counting sort we use collection of numbers with repetitions
-            // we need repetitions to see proper algorithm characterictic
+            // * for Counting sort we use collection of numbers with repetitions
+            // * we need repetitions to see proper algorithm characterictic
             //var countingSort = new CountingSort(generateNumbersWithRepetitions.array);
             //new PrintSolution(countingSort.solution);
 
-
+            // * Exchange Sort *
+            // * sorts similar to Bubble sort but in descending way
+            //var exchangeSort = new ExchangeSort(generateNumbers.generatedArray);
+            //new PrintSolution(exchangeSort.solution);
 
 
             Console.ReadKey();
