@@ -22,6 +22,8 @@ namespace SortingAlgorithms
             //var exchangeSort = new ExchangeSort(generateNumbers.generatedArray);
             //new PrintSolution(exchangeSort.solution);
 
+            var heapSort = new HeapSort(generateNumbers.generatedArray);
+            new PrintSolution(heapSort.solution);
 
             Console.ReadKey();
         }
